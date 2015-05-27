@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.memecabin.pro.MainActivity$PlaceholderFragment" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/longinalertmessagetextview"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <TextView
+               
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/home_coming_soon_padding"
+               
+                android:gravity="center"
+                android:paddingBottom="@dimen/badger_text_margin"
+                android:paddingLeft="@dimen/readallmarkmargin"
+                android:paddingRight="@dimen/readallmarkmargin"
+                android:paddingTop="@dimen/badger_text_margin"
+                android:text="Share this meme!"
+                android:textSize="@dimen/marallpopupheader" />
+            
+            
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose the text you'd like to share with this meme:"
+                android:gravity="center"
+                android:layout_marginBottom="3dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dialogleftsubheaer"/>
+
+            <EditText
+                android:id="@+id/commentstextforshare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/settingbtpadding"
+                android:background="@color/gray"
+                android:cursorVisible="true"
+                android:gravity="left|top"
+                android:lines="3"
+                android:maxLines="3"
+                android:paddingLeft="@dimen/settingbtpadding"
+                android:paddingRight="@dimen/settingbtpadding"
+                android:textColor="@color/white"
+                android:textSize="@dimen/denmessage_tex" />
+
+            <LinearLayout
+                android:id="@+id/sharebtfbortwitter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/buttontexshare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/back_to_first_btn_margin"
+                    android:background="#FF6600"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/badger_text_margin"
+                    android:paddingLeft="@dimen/forgetpaddinletright"
+                    android:paddingRight="@dimen/forgetpaddinletright"
+                    android:paddingTop="@dimen/badger_text_margin"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/marallpopupheader"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

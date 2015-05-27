@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.memecabin.free.MainActivity$PlaceholderFragment" >
+
+<RelativeLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+   >
+    
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/cameraheadnoaction_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/popup"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="@string/sharePicture"
+                    android:textColor="@color/bagoni"
+                    android:textSize="@dimen/marallpopupheader"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="@string/pictureLoadInfo"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/home_menu_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cameraheadnoaction_ll"
+                android:layout_alignLeft="@+id/cameraheadnoaction_ll"
+                android:layout_alignRight="@+id/cameraheadnoaction_ll"
+                android:background="@drawable/camerabacg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp" >
+
+                <LinearLayout
+                    android:id="@+id/noactioncamerabg_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/cameraBtn"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginTop="5dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/camera" />
+
+                    <LinearLayout
+                        android:id="@+id/imageSend_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/sendImageBg_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/sendit"
+                            android:textSize="@dimen/badger_text_size"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        </RelativeLayout>
+ 
+
+ 
+
+</RelativeLayout>

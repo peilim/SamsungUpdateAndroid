@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+         >
+
+        <LinearLayout
+            android:id="@+id/firsthome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/popup"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:gravity="center_horizontal"
+                android:text="17+"
+                android:textColor="@color/rad"
+                android:textSize="@dimen/racypoupdialog17"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="@string/messageShowfirst"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/racypoupdialoasub" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/noWorristhome_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firsthome"
+            android:layout_alignLeft="@+id/firsthome"
+            android:layout_alignRight="@+id/firsthome"
+            android:background="@drawable/popup1"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/noWorries"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dialogleftheader"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/iKnowhome_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/noWorristhome_ll"
+            android:layout_alignLeft="@+id/noWorristhome_ll"
+            android:layout_alignRight="@+id/noWorristhome_ll"
+            android:background="@drawable/popup2"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/iKnow"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dialogleftheader"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/yIlikehome_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iKnowhome_ll"
+            android:layout_alignLeft="@id/iKnowhome_ll"
+            android:layout_alignRight="@id/iKnowhome_ll"
+            android:background="@drawable/popup1"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/yikes"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dialogleftheader"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkOuthome_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yIlikehome_ll"
+            android:layout_alignLeft="@+id/yIlikehome_ll"
+            android:layout_alignRight="@+id/yIlikehome_ll"
+            android:background="@drawable/popup2"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Get me the heck out of here!"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dialogleftheader"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:paddingBottom="3dp"
+                android:text="(and remove this icon from my home screen)"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dialogleftsubheaer"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/noWorristhome_ll"
+        android:layout_centerVertical="true" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1" />
+
+        <LinearLayout
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/leftmargindialog"
+                android:src="@drawable/racypopuplog" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

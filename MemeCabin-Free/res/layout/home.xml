@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homeparentRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homescr"
+    android:fitsSystemWindows="true"
+    tools:context="com.memecabin.free.MainActivity$PlaceholderFragment" >
+
+    <LinearLayout
+        android:id="@+id/headingTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android:src="@drawable/homelogo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:gravity="center_horizontal"
+            android:text="@string/startoday"
+            android:textColor="@color/white"
+            android:textSize="@dimen/home_title_text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llPreferenceHolder"
+        android:layout_below="@+id/headingTop"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:weightSum="3" >
+
+        <LinearLayout
+            android:id="@+id/llMenuRowOne"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llMenuRowTwo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/llMenuRowThree"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+        </LinearLayout>
+
+        <!-- <RelativeLayout
+            android:id="@+id/rlComingSoonHolder"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="2dp"
+            android:layout_weight="1" >
+
+            <com.aacom.memecabin.utils.CustomImageViewLargeHeight
+                android:id="@+id/imgComingSoon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/txtVwComingSoon"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:onClick="openComingSoon"
+                android:padding="@dimen/home_coming_soon_padding"
+                android:src="@drawable/coming" />
+
+            <TextView
+                android:id="@+id/txtVwComingSoon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="2dp"
+                android:gravity="center_horizontal"
+                android:onClick="openComingSoon"
+                android:text="@string/commingText"
+                android:textColor="@color/white"
+                android:textSize="@dimen/home_menu_text_size" />
+        </RelativeLayout> -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPreferenceHolder"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <ImageView
+            android:id="@+id/preferencehome_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:src="@drawable/preferehome" />
+
+        <ImageView
+            android:id="@+id/logouthome_iv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:src="@drawable/btn_logout" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/racyPopUp_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/transparent"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginTop="40dp"
+            layout="@layout/racypopup" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/shoCodeViewRacy_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/transparent"
+        android:visibility="gone" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            layout="@layout/racymemecode_include" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/shoCodeViewRacy_r2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/transparent"
+        android:visibility="gone" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            layout="@layout/racymemecode2_include" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/shoCodeViewRacy1_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/transparent"
+        android:visibility="gone" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            layout="@layout/racymemecode1_include" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/racyCamera_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/transparent"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="60dp"
+            layout="@layout/racyuploadimage_home" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlRateAppDialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/transparent"
+        android:visibility="gone" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            layout="@layout/rateappdilog" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/racyAfterSubImage_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/transparent"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GOT IT!"
+                android:textColor="@color/white"
+                android:textSize="60sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(thanks!)"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/denmessagefromapiRelative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/transparent"
+        android:visibility="gone" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/forgetpaddinletright"
+            android:layout_marginRight="@dimen/forgetpaddinletright"
+            layout="@layout/allracyfromdan" />
+    </RelativeLayout>
+    
+    
+    <RelativeLayout
+        android:id="@+id/addsviewshow" 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/transparent"
+        android:visibility="gone">
+       <RelativeLayout
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/forgetpaddinletright"
+        android:layout_marginRight="@dimen/forgetpaddinletright"
+        android:layout_centerInParent="true"
+        >
+        <include 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/forgetpaddinletright"
+            android:layout_marginRight="@dimen/forgetpaddinletright"
+            layout="@layout/diloghome"/>
+    </RelativeLayout>
+        
+    </RelativeLayout>
+       
+
+</RelativeLayout>

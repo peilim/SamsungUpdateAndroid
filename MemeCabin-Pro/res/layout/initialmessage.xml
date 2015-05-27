@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/danbackground" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_margin="@dimen/shadow_width"
+        >
+        <TextView 
+            android:layout_marginRight="@dimen/shadow_width"
+            android:id="@+id/titleMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/preferencetexhead"
+            android:padding="@dimen/preference_option_margin_top_bottom"
+            android:background="@color/bagoni"
+            android:text="Title"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            />
+         <TextView 
+             android:id="@+id/bodymessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/favorite_login_text_size"
+            android:background="#FFFFFF"
+            android:padding="@dimen/readallmarkmargin"
+            android:text="Message Show or Body of Message"
+            android:textColor="@android:color/black"
+            />
+         
+         <LinearLayout 
+             android:layout_marginBottom="@dimen/shadow_width"
+             android:layout_marginRight="@dimen/shadow_width"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@drawable/danbgbutton"
+             android:orientation="vertical"
+             >
+             <Button 
+            android:id="@+id/linkbunclick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LINK"
+            android:textSize="@dimen/trending_open_list_sub_title_text_size"
+            android:paddingTop="@dimen/shadow_width"
+            android:paddingBottom="@dimen/shadow_width"
+            android:textStyle="bold"
+            android:background="@drawable/danbuttonfirst"
+            />
+             <Button 
+                 android:id="@+id/nextimebtnclick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SHOW NEXT TIME"
+            android:textSize="@dimen/trending_swipe_title_text_size"
+            android:paddingTop="@dimen/shadow_width"
+            android:paddingBottom="@dimen/shadow_width"
+            android:textStyle="bold"
+            android:background="@drawable/danbuttonsecond"
+            />
+             <Button 
+                 android:id="@+id/notshowbtnagain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DON\'T SHOW THIS AGAIN"
+            android:textSize="@dimen/trending_swipe_title_text_size"
+            android:paddingTop="@dimen/shadow_width"
+            android:paddingBottom="@dimen/shadow_width"
+            
+            android:textStyle="bold"
+            android:background="@drawable/danbuttonfirst"
+            />
+             
+         </LinearLayout>
+         
+        
+        
+    </LinearLayout>
+
+</RelativeLayout>

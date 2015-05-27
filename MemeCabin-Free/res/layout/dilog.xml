@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.memecabin.free.MainActivity$PlaceholderFragment" >
+
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+         >
+
+        <LinearLayout
+            android:id="@+id/disableaddheadinglinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/markall"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="@string/disAdd"
+                android:textColor="@color/bagoni"
+                android:textSize="@dimen/title_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/awesomeApps"
+                android:textColor="@color/gray"
+                android:paddingBottom="@dimen/home_coming_soon_padding"
+                android:textSize="@dimen/badger_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/disablefor99"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/disableaddheadinglinear"
+            android:layout_alignLeft="@+id/disableaddheadinglinear"
+            android:layout_alignRight="@+id/disableaddheadinglinear"
+            android:background="@drawable/markall_2"
+            android:gravity="center_vertical"
+            android:onClick="buyForOneYear" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/chargeYears"
+                android:textColor="@color/black"
+                android:textSize="@dimen/title_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nahichangemind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/disableforever99"
+            android:layout_alignLeft="@+id/disableforever99"
+            android:layout_alignRight="@+id/disableforever99"
+            android:background="@drawable/markall_2"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/noChange"
+                android:textColor="@color/black"
+                android:textSize="@dimen/title_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/disableforever99"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/disablefor99"
+            android:background="@drawable/markall_2"
+            android:gravity="center_vertical"
+            android:onClick="buyLifeTime" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/chargeForever"
+                android:textColor="@color/black"
+                android:textSize="@dimen/title_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

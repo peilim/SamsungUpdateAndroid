@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.memecabin.free.MainActivity$PlaceholderFragment" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/firspasscode_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/popup"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="17+"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/rad"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/messageShowfirst"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/passcodebg"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp" >
+
+                <TextView
+                    android:id="@+id/racyTitlePopup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/goodIdea"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/entercodeP11_et"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/passbox"
+                        android:gravity="center_horizontal"
+                        android:imeOptions="actionNone"
+                        android:inputType="numberPassword"
+                        android:maxLength="1"
+                        android:singleLine="true"
+                        android:textSize="35sp" />
+
+                    <EditText
+                        android:id="@+id/entercodeP22_et"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/passbox"
+                        android:gravity="center_horizontal"
+                        android:imeOptions="actionNone"
+                        android:inputType="numberPassword"
+                        android:maxLength="1"
+                        android:singleLine="true"
+                        android:textSize="35sp" />
+
+                    <EditText
+                        android:id="@+id/entercodeP33_et"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/passbox"
+                        android:gravity="center_horizontal"
+                        android:inputType="numberPassword"
+                        android:maxLength="1"
+                        android:imeOptions="actionNone"
+                        android:singleLine="true"
+                        android:textSize="35sp" />
+
+                    <EditText
+                        android:id="@+id/entercodeDone_et"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/passbox"
+                        android:gravity="center_horizontal"
+                        android:inputType="numberPassword"
+                        android:maxLength="1"
+                        android:imeOptions="actionNone"
+                        android:singleLine="true"
+                        android:textSize="35sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Type a 4-digit code."
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+                  <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_horizontal"
+                    android:text="(You can disable this later in app preferences)"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+                
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

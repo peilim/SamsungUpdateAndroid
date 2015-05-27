@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.memecabin.free.MainActivity$PlaceholderFragment" >
+
+    <LinearLayout
+        android:id="@+id/reportTopbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_bar_height"
+            android:background="@drawable/favotop1"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="backBtn" >
+
+                <com.aacom.memecabin.utils.CustomImageViewLargeHeight
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:padding="@dimen/swipe_screen_top_right_padding"
+                    android:src="@drawable/back" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/reportTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="@string/ReportCopyrightedMeme"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dialogleftheader" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right" >
+
+                <com.aacom.memecabin.utils.CustomImageViewLargeHeight
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:padding="@dimen/swipe_screen_top_right_padding"
+                    android:src="@drawable/cakememe" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/topTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/weStiveToOnly"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dialogleftheader" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/reportTopbar" >
+
+        <LinearLayout
+            android:id="@+id/reportBottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.memecabin.free.TouchImageView
+                android:id="@+id/reportImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/place_holder" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/YourName"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dialogleftheader" />
+
+                <EditText
+                    android:id="@+id/reportName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:maxLines="1"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/YourEmail"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dialogleftheader" />
+
+                <EditText
+                    android:id="@+id/reportEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:maxLines="1"
+                      android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|top"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/report"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dialogleftheader" />
+
+                <EditText
+                    android:id="@+id/report"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="2"
+                    android:gravity="left"
+                      android:imeOptions="actionDone"
+                    android:maxLines="3"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|top"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dialogleftheader" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="2"
+                    android:gravity="center" >
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="reportSubmit"
+                        android:text="@string/Reported"
+                        android:textSize="@dimen/dialogleftheader" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/skipLogin_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_bar_height2"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/favotop"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <com.aacom.memecabin.utils.CustomImageViewLargeHeight
+            android:id="@+id/memeSwipeHome_im"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:padding="5dp"
+            android:src="@drawable/loghome" />
+
+        <com.aacom.memecabin.utils.CustomImageViewLargeHeight
+            android:id="@+id/memeSwipeRel_im"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/back_to_first_btn_margin"
+            android:padding="@dimen/back_to_first_btn_padding"
+            android:src="@drawable/refresh" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right" >
+
+            <com.aacom.memecabin.utils.CustomImageViewLargeHeight
+                android:id="@+id/memeSwipeShare_im"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:padding="5dp"
+                android:src="@drawable/sharememe" />
+
+            <com.aacom.memecabin.utils.CustomImageViewLargeHeight
+                android:id="@+id/memeSwipeFav_im"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/memeSwipeShare_im"
+                android:padding="5dp"
+                android:src="@drawable/pressallmeme" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/memeAfterright_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/skipLogin_ll"
+        android:layout_below="@+id/topbar_rl"
+        android:layout_centerInParent="true"
+        android:background="@drawable/transparent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginracypopuptop"
+            android:layout_marginRight="@dimen/marginracypopuptop"
+            layout="@layout/memesright_include" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/viewfirstVp_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/skipLogin_ll"
+        android:layout_below="@+id/topbar_rl"
+        android:layout_centerInParent="true"
+        android:background="@drawable/transparent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginracypopuptop"
+            android:layout_marginRight="@dimen/marginracypopuptop"
+            layout="@layout/memeleft_include" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/addtofavoritesTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/skipLogin_ll"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/add_to_fav"
+        android:gravity="center"
+        android:paddingBottom="@dimen/readallmarkmargin"
+        android:paddingLeft="@dimen/badger_text_margin"
+        android:paddingRight="@dimen/badger_text_margin"
+        android:text="@string/addfavorites"
+        android:textColor="@color/black"
+        android:textSize="@dimen/preference_option_text_size"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/memeallshare_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/skipLogin_ll"
+        android:layout_below="@+id/topbar_rl"
+        android:layout_centerInParent="true"
+        android:background="@drawable/transparent"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/memeswipeshare" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlDecide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/transparent"
+        android:visibility="gone" >
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/marginlrpopupracy"
+            android:layout_marginRight="@dimen/marginlrpopupracy"
+            layout="@layout/decide_login" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sharecommntsviewmeme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/margingforgetview"
+        android:layout_marginRight="@dimen/margingforgetview"
+        android:background="#ddc7c7c7"
+        android:visibility="gone" >
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/shareftmmsmail" />
+    </RelativeLayout>
+
+</RelativeLayout>

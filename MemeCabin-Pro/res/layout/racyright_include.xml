@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="com.memecabin.pro.MainActivity$PlaceholderFragment" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+         >
+
+        <LinearLayout
+            android:id="@+id/dialogrighatheaderll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/markall"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/afterswipeCon"
+                android:textColor="@color/bagoni"
+                android:textSize="@dimen/dialogleftheader"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:text="@string/whattodo"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/dialogleftsubheaer" />
+        </LinearLayout>
+
+    <!--     <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/messgeShow_ll"
+            android:orientation="vertical" > -->
+
+            <LinearLayout
+                android:id="@+id/racyHere_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dialogrighatheaderll"
+                android:layout_alignLeft="@+id/dialogrighatheaderll"
+                android:layout_alignRight="@+id/dialogrighatheaderll"
+                android:background="@drawable/markall_2"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/keepme"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dialogleftheader"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/racyFirst_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/racyHere_ll"
+                android:layout_alignLeft="@+id/racyHere_ll"
+                android:layout_alignRight="@+id/racyHere_ll"
+                android:background="@drawable/markall_2"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                   android:padding="5dp"
+                    android:text="@string/backFirst"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dialogleftheader"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/racyfavri_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/racyFirst_ll"
+                android:layout_alignLeft="@+id/racyFirst_ll"
+                android:layout_alignRight="@+id/racyFirst_ll"
+                android:background="@drawable/markall_2"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/viewFavourites"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dialogleftheader"
+                    android:textStyle="bold" />
+           <!--  </LinearLayout> -->
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

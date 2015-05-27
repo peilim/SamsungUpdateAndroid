@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.memecabin.pro.MainActivity$PlaceholderFragment" >
+
+    <RelativeLayout
+        android:id="@+id/topbar_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/a111" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/favoSwipeBack_ll"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <com.aacom.memecabin.utils.CustomImageViewLargeHeight                android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:padding="@dimen/swipe_screen_top_right_padding"
+                    android:src="@drawable/back" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:scaleType="centerInside"
+                android:src="@drawable/topbactext" >
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right" >
+
+                <com.aacom.memecabin.utils.CustomImageViewLargeHeight                android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:padding="@dimen/swipe_screen_top_right_padding"
+                    android:src="@drawable/d111" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/swipeHead_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topbar_rl"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/favmiddle"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right" >
+
+                <com.aacom.memecabin.utils.CustomImageViewLargeHeight                android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/d111" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="Your Saved Favorites"
+                android:textColor="@color/white"
+                android:textSize="@dimen/favorite_title_text_size" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+   <!--  <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/skipLogin_ll"
+        android:layout_centerHorizontal="true"
+        ads:adSize="SMART_BANNER"
+        android:visibility="gone"
+        ads:adUnitId="@string/banner_ad_unit_id" >
+    </com.google.android.gms.ads.AdView>
+    
+     <com.mopub.mobileads.MoPubView
+        android:id="@+id/adview"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/skipLogin_ll"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" /> -->
+        
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/adview"
+        android:visibility="gone" >
+        
+    </RelativeLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/skipLogin_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_bar_height2"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/b111"
+        android:orientation="horizontal" >
+
+        <com.aacom.memecabin.utils.CustomImageViewLargeHeight        android:id="@+id/favoSwipeHome_im"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/loghome" />
+
+        <com.aacom.memecabin.utils.CustomImageViewLargeHeight        android:id="@+id/favoSwipeRel_im"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/back_to_first_btn_margin"
+            android:padding="@dimen/back_to_first_btn_padding"
+            android:src="@drawable/reloadfavo" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right" >
+
+            <com.aacom.memecabin.utils.CustomImageViewLargeHeight            android:id="@+id/favoSwipeShare_im"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/sharememe" />
+
+<!--             <com.aapbd.memecabin.utils.CustomImageViewLargeHeight
+                android:id="@+id/favoSwipeFav_im"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/favoSwipeShare_im"
+                android:paddingTop="5dp"
+                android:src="@drawable/c111" /> -->
+                
+                <com.aacom.memecabin.utils.CustomImageViewLargeHeight            android:id="@+id/favoSwipeFav_im"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/favoSwipeShare_im"
+                android:padding="5dp"
+                android:src="@drawable/pressfavoxml" />
+                
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/skipLogin_ll"
+        android:layout_below="@+id/swipeHead_ll"
+        android:layout_centerInParent="true"
+        android:gravity="center" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/favoimageView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:id="@+id/llLikePanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_transparent_bg"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/favoliketotal_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/markallpopupsubheader" />
+
+                    <ImageView
+                        android:id="@+id/favoLike_im"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/afterlikefavo" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/favoAfterright_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/skipLogin_ll"
+        android:layout_below="@+id/topbar_rl"
+        android:layout_centerInParent="true"
+        android:background="@drawable/transparent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginracypopuptop"
+            android:layout_marginRight="@dimen/marginracypopuptop"
+            layout="@layout/favoright_include" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/favoAfterLeft_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/skipLogin_ll"
+        android:layout_below="@+id/topbar_rl"
+        android:layout_centerInParent="true"
+        android:background="@drawable/transparent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginracypopuptop"
+            android:layout_marginRight="@dimen/marginracypopuptop"
+            layout="@layout/favoleft_include" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/addtofavTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/skipLogin_ll"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/add_to_fav"
+        android:gravity="center"
+        android:paddingBottom="@dimen/readallmarkmargin"
+        android:paddingLeft="@dimen/badger_text_margin"
+        android:paddingRight="@dimen/badger_text_margin"
+        android:textSize="@dimen/preference_option_text_size"
+        android:text="@string/addfavorites"
+        android:textColor="@color/black"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/favosharememe_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/skipLogin_ll"
+        android:layout_below="@+id/topbar_rl"
+        android:layout_centerInParent="true"
+        android:background="@drawable/transparent"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/favoriteswipeshare" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlDecide"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/transparent"
+        android:visibility="gone" >
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            layout="@layout/decide_login" />
+    </RelativeLayout>
+
+   <!--  <FrameLayout
+        android:id="@+id/fulladdfavolayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true" >
+    </FrameLayout> -->
+    
+              <RelativeLayout
+        android:id="@+id/sharecommntsviewfavo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/margingforgetview"
+        android:layout_marginRight="@dimen/margingforgetview"
+       android:background="#ddc7c7c7"
+        android:visibility="gone" >
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/shareftmmsmail" />
+    </RelativeLayout>
+
+</RelativeLayout>

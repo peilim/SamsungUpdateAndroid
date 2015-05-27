@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D2151B" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="#D2151B"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/reportTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/title_bg"
+                    android:layout_marginRight="@dimen/title_bg"
+                    android:layout_marginTop="@dimen/title_bg"
+                    android:background="#707070"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/title_bg"
+                    android:paddingTop="@dimen/title_bg"
+                    android:text="@string/ReportCopyrightedMeme"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/loginregistration_texsize" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_size"
+                        android:layout_height="@dimen/icon_size"
+                        android:src="@drawable/ic_launcher" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/AtMemeCabin"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/loginregistration_texsize" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/topTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/title_bg"
+                    android:layout_marginRight="@dimen/title_bg"
+                    android:gravity="center"
+                    android:text="@string/weAreReallyHardtoONly"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/markallpopupsubheader" />
+
+                <EditText
+                    android:id="@+id/reportName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/title_bg"
+                    android:layout_marginRight="@dimen/title_bg"
+                    android:layout_marginTop="5dp"
+                    android:hint="@string/YourFullName"
+                    android:maxLines="1"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/markallpopupsubheader" />
+
+                <EditText
+                    android:id="@+id/reportEmail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/title_bg"
+                    android:layout_marginRight="@dimen/title_bg"
+                    android:layout_marginTop="5dp"
+                    android:hint="@string/YourEmailAddress"
+                    android:maxLines="1"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/markallpopupsubheader" />
+
+                <EditText
+                    android:id="@+id/report"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/report_edit"
+                    android:layout_marginLeft="@dimen/title_bg"
+                    android:layout_marginRight="@dimen/title_bg"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:hint="@string/moreDetailsAboutThisImage"
+                    android:imeOptions="actionDone"
+                    android:maxLines="3"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/markallpopupsubheader" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/title_bg"
+                    android:layout_marginRight="@dimen/title_bg"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <CheckBox
+                                android:id="@+id/reportCheckBox"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="20dip"
+                                android:text="@string/iHoldAllRightToImage"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/home_coming_soon_text_size" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/icon_size"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/pop_22"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:onClick="reportSubmit"
+                            android:text="@string/send"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/loginregistration_texsize"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dip" >
+
+                        <TextView
+                            android:id="@+id/toptexreportimage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dip"
+                            android:background="#707070"
+                            android:gravity="left|top"
+                            android:padding="5dp"
+                            android:text="@string/memeYouAreReporting"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/markallpopupsubheader" />
+
+                        <com.memecabin.free.TouchImageView
+                            android:id="@+id/reportImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/report_edit"
+                            android:layout_below="@+id/toptexreportimage"
+                            android:layout_marginTop="5dip"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/place_holder" />
+
+                        <WebView 
+                            android:id="@+id/gifwebview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/report_edit"
+                            android:layout_below="@+id/toptexreportimage"
+                            android:src="@drawable/swip_06"/>
+                        
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/reportBottomLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:gravity="right"
+                        android:text="@string/reportIconForSHare"
+                        android:textSize="@dimen/markallpopupsubheader" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/pop_27" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

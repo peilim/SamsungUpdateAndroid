@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:onClick="favorithumnailrelative"
+    tools:context="com.memecabin.free.MainActivity$PlaceholderFragment" >
+
+    <RelativeLayout
+        android:id="@+id/topbar_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/a111" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:scaleType="centerInside"
+                android:src="@drawable/topbactext" >
+            </ImageView>
+
+            <LinearLayout
+                android:id="@+id/favSlide_ll"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right" >
+
+                <!--
+                     <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="2dp"
+                    android:src="@drawable/rebonlogo" />
+                -->
+
+                <com.aacom.memecabin.utils.CustomImageViewLargeHeight
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/swipe_screen_top_right_padding"
+                    android:src="@drawable/rebonlogo" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adView"
+        android:layout_below="@+id/topbar_rl"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/favmiddle"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right" >
+
+                <!--
+                     <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/d111" />
+                -->
+
+                <com.aacom.memecabin.utils.CustomImageViewLargeHeight
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/d111" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/countfavorites_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/favorite_title_text_size" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/whatdo_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/openswiping"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tumb_screen_mark_all_text_size" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!--
+            <GridView
+                android:id="@+id/gridView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:listSelector="@null"
+                android:numColumns="4"
+                android:overScrollMode="never"
+                android:scrollbars="none" >
+            </GridView>
+            -->
+
+            <com.handmark.pulltorefresh.library.PullToRefreshGridView
+                android:id="@+id/favoriteMemeGrid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="4"
+                android:scrollbars="none" />
+
+            <RelativeLayout
+                android:id="@+id/ifImplt_rl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg"
+                android:visibility="gone" >
+
+                <include
+                    android:id="@+id/emptyLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/favoritempty" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/showdialogusingskip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg"
+                android:visibility="gone" >
+
+                <include
+                    android:id="@+id/emptyLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/favoriteloginmessage" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+   <!--  <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/skipLogin_ll"
+        android:layout_centerHorizontal="true"
+        ads:adSize="SMART_BANNER"
+        android:visibility="gone"
+        ads:adUnitId="@string/banner_ad_unit_id" >
+    </com.google.android.gms.ads.AdView> -->
+    
+    
+    <!-- 
+     <com.mopub.mobileads.MoPubView
+        android:id="@+id/adview"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/skipLogin_ll"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+        
+         -->
+         
+    <RelativeLayout 
+	   	android:id="@+id/adView"
+	   	android:layout_width="match_parent"
+	   	android:layout_height="50dp"
+	   	android:layout_above="@+id/skipLogin_ll"
+		android:layout_centerHorizontal="true"
+		android:background="#FF0000" >
+        
+	    <com.google.android.gms.ads.AdView
+	        android:id="@+id/google_adView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        ads:adSize="SMART_BANNER"
+	        android:visibility="gone"
+	        ads:adUnitId="@string/banner_ad_unit_id" >
+    	</com.google.android.gms.ads.AdView>
+    	
+	</RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/skipLogin_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_bar_height2"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/b111"
+        android:orientation="horizontal" >
+
+        <!--
+             <ImageView
+            android:id="@+id/favHome_im"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:padding="5dp"
+            android:src="@drawable/loghome" />
+        -->
+
+        <com.aacom.memecabin.utils.CustomImageViewLargeHeight
+            android:id="@+id/favHome_im"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:padding="5dp"
+            android:src="@drawable/loghome" />
+
+        <ImageView
+            android:id="@+id/favReload_im"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:src="@drawable/refresh"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right" >
+
+            <!--
+                 <ImageView
+                android:id="@+id/favShare_im"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:padding="2dp"
+                android:src="@drawable/preferencesico" />
+            -->
+
+            <com.aacom.memecabin.utils.CustomImageViewLargeHeight
+                android:id="@+id/favShare_im"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:padding="@dimen/badger_text_margin"
+                android:src="@drawable/preferencesico" />
+
+            <ImageView
+                android:id="@+id/favFav_im"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/favShare_im"
+                android:padding="2dp"
+                android:src="@drawable/c111"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

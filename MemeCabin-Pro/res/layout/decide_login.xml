@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dialogleftheader"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="@string/text_decide_title_1" />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:singleLine="false"
+        android:maxLines="3"
+        android:minLines="3"
+        android:textSize="@dimen/denmessage_tex"
+        android:text="@string/text_decide_title" />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:background="#333333" />
+    
+    <TextView
+        android:id="@+id/txtLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_decide_login"
+        android:layout_margin="10dp"
+        android:textSize="@dimen/denmessage_tex"
+        android:gravity="center"
+        android:textColor="@color/blue" />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:background="#333333" />
+    
+    <TextView
+        android:id="@+id/txtNoThanks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_decide_no_thanks"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textSize="@dimen/denmessage_tex"
+        android:textColor="@color/blue"
+        android:textStyle="bold" />
+
+</LinearLayout>

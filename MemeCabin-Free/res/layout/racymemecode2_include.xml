@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="com.memecabin.free.MainActivity$PlaceholderFragment" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/secondpasscode_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/popupracyicon"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <!--
+                     <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center_horizontal"
+                    android:text="17+"
+                    android:textColor="@color/rad"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+                -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/passcodebg"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/reaccessracy"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/edtxtPassC1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/passbox"
+                        android:gravity="center_horizontal"
+                        android:imeOptions="actionNone"
+                        android:inputType="numberPassword"
+                        android:maxLength="1"
+                        android:singleLine="true"
+                        android:textSize="35sp" />
+
+                    <EditText
+                        android:id="@+id/edtxtPassC2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/passbox"
+                        android:gravity="center_horizontal"
+                        android:imeOptions="actionNone"
+                        android:inputType="numberPassword"
+                        android:maxLength="1"
+                        android:singleLine="true"
+                        android:textSize="35sp" >
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/edtxtPassC3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/passbox"
+                        android:gravity="center_horizontal"
+                        android:imeOptions="actionNone"
+                        android:inputType="numberPassword"
+                        android:maxLength="1"
+                        android:singleLine="true"
+                        android:textSize="35sp" />
+
+                    <EditText
+                        android:id="@+id/edtxtPassC4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/passbox"
+                        android:gravity="center_horizontal"
+                        android:imeOptions="actionNone"
+                        android:inputType="numberPassword"
+                        android:maxLength="1"
+                        android:singleLine="true"
+                        android:textSize="35sp" />
+                </LinearLayout>
+
+                <!--
+                     <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/text_enter_pass"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+                -->
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/list_padding"
+        android:orientation="vertical" >
+
+        
+
+        <Button
+            android:id="@+id/MoveBookmarkHere"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textlines"
+            android:layout_below="@+id/hedialogtex"
+            android:layout_alignLeft="@+id/hedialogtex"
+            android:layout_alignRight="@+id/hedialogtex"
+            android:gravity="center"
+            android:paddingTop="@dimen/list_padding"
+            android:paddingBottom="@dimen/list_padding"
+            android:text="Move Bookmark Here"
+            android:textColor="#555555"
+            android:textSize="@dimen/favorite_login_text_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/GotoBookmark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textlines1"
+            android:gravity="center"
+            android:layout_below="@+id/MoveBookmarkHere"
+            android:layout_alignLeft="@+id/MoveBookmarkHere"
+            android:layout_alignRight="@+id/MoveBookmarkHere"
+            android:paddingTop="@dimen/list_padding"
+            android:paddingBottom="@dimen/list_padding"
+            android:text="Go to Bookmark"
+            android:textColor="#555555"
+            android:textSize="@dimen/favorite_login_text_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textlines1"
+            android:layout_below="@+id/GotoBookmark"
+            android:layout_alignLeft="@+id/GotoBookmark"
+            android:layout_alignRight="@+id/GotoBookmark"
+            android:gravity="center"
+            android:text="Cancel"
+            android:paddingTop="@dimen/list_padding"
+            android:paddingBottom="@dimen/list_padding"
+            android:textColor="#555555"
+            android:textSize="@dimen/favorite_login_text_size"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>

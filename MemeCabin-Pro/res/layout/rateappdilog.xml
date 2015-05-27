@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.memecabin.pro.MainActivity$PlaceholderFragment" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+         >
+
+        <LinearLayout
+            android:id="@+id/rateheadinglinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/markall"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Will you rate this app?"
+                android:textColor="@color/bagoni"
+                android:textSize="@dimen/title_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/wouldyoulike"
+                android:textColor="@color/gray"
+                android:paddingBottom="@dimen/home_coming_soon_padding"
+                android:textSize="@dimen/badger_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fivestarlinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rateheadinglinear"
+            android:layout_alignLeft="@+id/rateheadinglinear"
+            android:layout_alignRight="@+id/rateheadinglinear"
+            android:background="@drawable/markall_2"
+            android:gravity="center_vertical"
+            android:onClick="buyForOneYear" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_horizontal"
+                android:text="YES! Five stars, baby!"
+                android:textColor="@color/black"
+                android:textSize="@dimen/title_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rmaindmelinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fivestarlinear"
+            android:layout_alignLeft="@+id/fivestarlinear"
+            android:layout_alignRight="@+id/fivestarlinear"
+            android:background="@drawable/markall_2"
+            android:gravity="center_vertical"
+            android:onClick="buyLifeTime" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_horizontal"
+                android:text="Hey Dan, remind me later."
+                android:textColor="@color/black"
+                android:textSize="@dimen/title_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/noidontwannalinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rmaindmelinear"
+            android:layout_alignLeft="@+id/rmaindmelinear"
+            android:layout_alignRight="@+id/rmaindmelinear"
+            android:background="@drawable/markall_2"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_horizontal"
+                android:text="No. I don&apos;t wanna."
+                android:textColor="@color/black"
+                android:textSize="@dimen/title_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

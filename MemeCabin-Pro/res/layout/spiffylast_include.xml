@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal|center_vertical"
+    tools:context="com.memecabin.pro.MainActivity$PlaceholderFragment" >
+
+  
+
+    
+
+ <RelativeLayout
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:gravity="center" >
+
+
+            <LinearLayout
+                android:id="@+id/motirightpopup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/markall"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/afterswipeCon"
+                    android:textColor="@color/bagoni"
+                    android:textSize="@dimen/dialogleftheader"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/whattodo"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/dialogleftsubheaer" />
+            </LinearLayout>
+
+         
+
+                <LinearLayout
+                    android:id="@+id/motiHere_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/motirightpopup"
+                    android:layout_alignLeft="@+id/motirightpopup"
+                    android:layout_alignRight="@+id/motirightpopup"
+                    android:background="@drawable/markall_2"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="5dp"
+                        android:text="@string/keepme"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dialogleftheader"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/motiFirst_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/motiHere_ll"
+                    android:layout_alignLeft="@+id/motiHere_ll"
+                    android:layout_alignRight="@+id/motiHere_ll"
+                    android:background="@drawable/markall_2"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="5dp"
+                        android:text="@string/backFirst"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dialogleftheader"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                
+          
+       
+</RelativeLayout>
+</RelativeLayout>

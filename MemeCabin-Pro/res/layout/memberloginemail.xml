@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    tools:context="com.memecabin.pro.MainActivity$PlaceholderFragment" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/LoginWithEmailAddress1_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/longinalertmessagetextview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/afterregistrationlogintext1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Member Login (email)"
+                android:textSize="@dimen/loginregistration_texsize" />
+
+            <EditText
+                android:id="@+id/memberEmail_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/editbg"
+                android:hint="@string/emailAddress"
+                android:paddingLeft="10dp"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textSize="@dimen/title_text_size" />
+
+            <EditText
+                android:id="@+id/memberPassword_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/editbg"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textSize="@dimen/title_text_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/forgetPasswordMain_ll"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/forgotPassword_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:singleLine="false"
+                        android:textSize="@dimen/home_menu_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/loginLinear"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right" >
+
+                    <TextView
+                        android:id="@+id/loginUser_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#FF6600"
+                        android:paddingBottom="12dp"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:paddingTop="12dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Login!"
+                        android:gravity="right"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/title_text_size"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

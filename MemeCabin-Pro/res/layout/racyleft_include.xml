@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="com.memecabin.pro.MainActivity$PlaceholderFragment" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+         >
+
+        <LinearLayout
+            android:id="@+id/messgeShow_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/markall"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text="@string/youSure"
+                android:textColor="@color/bagoni"
+                android:textSize="@dimen/dialogleftheader"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/weJust"
+                android:textColor="@color/gray"
+                android:paddingBottom="5dp"
+                android:textSize="@dimen/dialogleftsubheaer" />
+        </LinearLayout>
+
+        <!--
+             <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/messgeShow_ll"
+            android:layout_alignLeft="@+id/messgeShow_ll"
+            android:layout_alignParentRight="@+id/messgeShow_ll"
+            android:orientation="vertical" >
+        -->
+
+        <LinearLayout
+            android:id="@+id/racyfirstVp_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/messgeShow_ll"
+            android:layout_alignLeft="@+id/messgeShow_ll"
+            android:layout_alignRight="@+id/messgeShow_ll"
+            
+            android:background="@drawable/markall_2"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/yepTake"
+                android:textColor="@color/black"
+                android:padding="3dp"
+                android:textSize="@dimen/dialogleftheader"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/racymessageNotShow_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/racyfirstVp_ll"
+            android:layout_alignLeft="@+id/racyfirstVp_ll"
+            android:layout_alignRight="@+id/racyfirstVp_ll"
+            android:background="@drawable/markall_2"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/yepDoagain"
+                android:textColor="@color/black"
+                android:padding="3dp"
+                android:textSize="@dimen/dialogleftheader"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/racyumCancle_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/racymessageNotShow_ll"
+            android:layout_alignLeft="@+id/racymessageNotShow_ll"
+            android:layout_alignRight="@+id/racymessageNotShow_ll"
+            android:background="@drawable/markall_2"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="@string/umCancel"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dialogleftheader"
+                android:textStyle="bold" />
+            <!-- </LinearLayout> -->
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

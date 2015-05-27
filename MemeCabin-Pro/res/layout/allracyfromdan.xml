@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.memecabin.pro.MainActivity$PlaceholderFragment" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/fromdantitle_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/danblack_bar"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="QUICK NOTE FROM DAN:"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/danallracynoactionLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fromdantitle_ll"
+            android:layout_alignLeft="@+id/fromdantitle_ll"
+            android:layout_alignRight="@+id/fromdantitle_ll"
+            android:background="@drawable/markall"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/messageTitel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="@string/singledad"
+                android:textColor="@color/bagoni"
+                android:textSize="@dimen/denmessage_head"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/messagesubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_horizontal"
+                android:text="I&apos;m so stinkin&apos; excited."
+                android:textColor="@color/gray"
+                android:textSize="@dimen/denmessage_tex" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/danmessageshowLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/danallracynoactionLinear"
+            android:layout_alignLeft="@+id/danallracynoactionLinear"
+            android:layout_alignRight="@+id/danallracynoactionLinear"
+            android:background="@drawable/markall_2"
+            android:gravity="center_vertical"
+            android:onClick="buyForOneYear" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_horizontal"
+                android:text="YAY! TAKE ME TO SEE IT!"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:textSize="@dimen/denmessage_head"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/danmeassageshownexttimeLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/danmessageshowLinear"
+            android:layout_alignLeft="@+id/danmessageshowLinear"
+            android:layout_alignRight="@+id/danmessageshowLinear"
+            android:background="@drawable/markall_2"
+            android:gravity="center_vertical"
+            android:onClick="buyLifeTime" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_horizontal"
+                android:text="REMIND ME NEXT TIME"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:textSize="@dimen/denmessage_head"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/danmessagenotshowLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/danmeassageshownexttimeLinear"
+            android:layout_alignLeft="@+id/danmeassageshownexttimeLinear"
+            android:layout_alignRight="@+id/danmeassageshownexttimeLinear"
+            android:background="@drawable/markall_2"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_horizontal"
+                android:text="BAH! I don&apos;t care!"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:textSize="@dimen/denmessage_head"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+     <color name="baccolor">#F7F2F2</color>
+     <color name="bgColor">#454A8A</color>
+     <color name="white">#FFFFFF</color>
+     <color name="hintColor">#9E9898</color>
+     <color name="black">#050505</color>
+     <color name="blue">#0000FF</color>
+     <color name="registerEmail">#46A8FF</color>
+     <color name="fbColor">#70588F</color>
+     <color name="memberLog">#EFFFFF</color>
+     <color name="skip">#FF5D00</color>
+     <color name="registerbt">#00E3D4</color>
+     <color name="transParent">#D7ECFF</color>
+     <color name="logColor">#FF9200</color>
+     <color name="homeColor">#10213D</color>
+     <color name="racyBg">#D5D8DE</color>
+     <color name="rad">#F21B42</color>
+     <color name="Transparent80">#80000000</color>
+     <color name="shareColor">#9428FF</color>
+     <color name="trending">#FF79FF</color>
+     <color name="colorTodays">#A851FF</color>
+     <color name="colorTodays1">#9E3EFF</color>
+     
+     
+     
+     
+     <color name="bagoni">#A949C9</color>
+     <color name="gray">#6E6E6E</color>
+     <color name="gray_border">#808080</color>
+     <color name="gray_pic_bg">#4D4D4D</color>
+     
+     <color name="blue_btn_normal">#008ACA</color>
+     <color name="blue_btn_pressed">#81C2EA</color>
+     
+     <color name="btn_color_fav_green">#39CA00</color>
+     
+     
+
+</resources>

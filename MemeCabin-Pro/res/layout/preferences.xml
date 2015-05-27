@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/prefenecLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.memecabin.pro.MainActivity$PlaceholderFragment" >
+
+    <RelativeLayout
+        android:id="@+id/topbar_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/preheadhide"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/favotop1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/preBack_im"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/downarrow" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:text="@string/preferences"
+                android:textColor="@color/white"
+                android:textSize="@dimen/preferencetexhead"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:visibility="invisible" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/skipLogin_ll"
+        android:layout_below="@+id/topbar_rl"
+        android:orientation="vertical"
+        android:weightSum="2" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/showNotifications"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/notificationtext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="@dimen/preference_option_margin_top_bottom"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/memesEveryone"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/preference_option_text_size"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ToggleButton
+                        android:id="@+id/preEveryOne_tg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/check"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:textOff=""
+                        android:textOn="" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/preference_option_margin_top_bottom"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/motivational"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/preference_option_text_size"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ToggleButton
+                        android:id="@+id/preMotivIns_tg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/check"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:textOff=""
+                        android:textOn="" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/preference_option_margin_top_bottom"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/racyMemes"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/preference_option_text_size"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ToggleButton
+                        android:id="@+id/preRacyMeme_tg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/check"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:textOff=""
+                        android:textOn="" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="2" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/preference_option_margin_top_bottom"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="right|center_vertical"
+                        android:text="@string/memenHome"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/preference_option_text_size"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ToggleButton
+                            android:id="@+id/preMemeHome_tg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/checkhome"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:textOff=""
+                            android:textOn="" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/preference_option_margin_top_bottom"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="right|center_vertical"
+                        android:text="@string/spiffyonoff"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/preference_option_text_size"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ToggleButton
+                            android:id="@+id/preSpiffyHome_tg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/checkhome"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:textOff=""
+                            android:textOn="" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/preference_option_margin_top_bottom"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="right|center_vertical"
+                        android:text="@string/sdlonoff"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/preference_option_text_size"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ToggleButton
+                            android:id="@+id/preSDLHome_tg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/checkhome"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:textOff=""
+                            android:textOn="" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/preference_option_margin_top_bottom"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="right|center_vertical"
+                        android:text="@string/lockUnlock"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/preference_option_text_size"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ToggleButton
+                            android:id="@+id/preLock_tg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/checklock"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:textOff=""
+                            android:textOn="" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/changePasswordPre_ll"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="20dp" >
+
+                <!--
+                     <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/changpassword"
+                    android:padding="5dp" />
+                -->
+
+                <Button
+                    android:id="@+id/btnChangePass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_bg_rounded_blue"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="6dp"
+                    android:text="@string/text_btn_change_passwd"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/preference_option_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+   
+
+    <RelativeLayout
+        android:id="@+id/changePasswordPref_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/skipLogin_ll"
+        android:layout_below="@+id/topbar_rl"
+        android:background="@drawable/transparent"
+        android:visibility="gone" >
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/marginracypopuptop"
+            android:layout_marginRight="@dimen/marginracypopuptop"
+            layout="@layout/preferencepass_include" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/skipLogin_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_bar_height2"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/favotop"
+        android:orientation="horizontal" >
+
+        <!--
+             <ImageView
+            android:id="@+id/preBottmBackunPre_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:padding="5dp"
+            android:src="@drawable/loghome" />
+        -->
+
+        <com.aacom.memecabin.utils.CustomImageViewLargeHeight        android:id="@+id/preBottmBackunPre_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:padding="5dp"
+            android:src="@drawable/loghome" />
+
+        <ImageView
+            android:id="@+id/preBottmBack1_iv_ref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:src="@drawable/refresh"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right" >
+
+            <ImageView
+                android:id="@+id/preBottmBack1_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/preferencesico"
+                android:visibility="gone" />
+
+            <!--
+                 <ImageView
+                android:id="@+id/seeting_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/preBottmBack1_iv"
+                android:padding="5dp"
+                android:src="@drawable/favcon" />
+            -->
+
+            <com.aacom.memecabin.utils.CustomImageViewLargeHeight            android:id="@+id/seeting_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/preBottmBack1_iv"
+                android:padding="5dp"
+                android:src="@drawable/favcon" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/shoCodeViewPref_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/skipLogin_ll"
+        android:layout_below="@+id/topbar_rl"
+        android:background="@drawable/transparent"
+        android:visibility="gone" >
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/marginracypopuptop"
+            android:layout_marginRight="@dimen/marginracypopuptop"
+            layout="@layout/preferencecode_include" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/shoCodeViewPref1_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/skipLogin_ll"
+        android:layout_below="@+id/topbar_rl"
+        android:background="@drawable/transparent"
+        android:visibility="gone" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            layout="@layout/preferencecode1_include" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/forgetpasswordRelativepreference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/margingforgetview"
+        android:layout_marginRight="@dimen/margingforgetview"
+        android:background="#ddc7c7c7"
+        android:visibility="gone" >
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            layout="@layout/forgetpasspreference" />
+    </RelativeLayout>
+
+</RelativeLayout>

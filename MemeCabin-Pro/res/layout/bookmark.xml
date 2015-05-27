@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/showmessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spicymessage"
+       android:layout_centerHorizontal="true"
+        android:paddingLeft="@dimen/badger_text_margin"
+        android:paddingRight="@dimen/badger_text_margin" >
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/bookmarkmessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bookmarkmarging1"
+           android:layout_centerHorizontal="true"
+            android:text="DON\&apos;T LOSE YOUR PLACE!"
+            android:textColor="#713F8C"
+            android:textSize="@dimen/bookmarktext1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/bookmarkmessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bookmarkmessage"
+            android:layout_marginTop="@dimen/bookmarkmarging2"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/badger_text_margin"
+            android:text="@string/messagespicy"
+            android:textColor="@color/black"
+            android:textSize="@dimen/bookmarktext2" />
+    </RelativeLayout>
+    
+    
+        
+
+    <!-- <RelativeLayout
+        android:id="@+id/spiffyBottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_bar_height2"
+        android:layout_below="@+id/showmessage"
+        android:background="@drawable/swip_08"
+        android:visibility="gone" >
+
+        <com.aacom.memecabin.utils.CustomImageViewLargeHeight
+            android:id="@+id/memeSwipeHome_im"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:onClick="setBack"
+            android:padding="@dimen/back_to_first_btn_padding"
+            android:src="@drawable/loghome" />
+
+        <com.aacom.memecabin.utils.CustomImageViewLargeHeight
+            android:id="@+id/memeSwipeRel_im"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/back_to_first_btn_margin"
+            android:layout_toRightOf="@+id/memeSwipeHome_im"
+            android:padding="@dimen/back_to_first_btn_margin"
+            android:src="@drawable/ssa_16" />
+
+        <com.aacom.memecabin.utils.CustomImageViewLargeHeight
+            android:id="@+id/markBookmark"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/back_to_first_btn_margin"
+            android:layout_toRightOf="@+id/memeSwipeRel_im"
+            android:padding="@dimen/back_to_first_btn_margin"
+            android:src="@drawable/bookmarkicon" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right" >
+
+            <com.aacom.memecabin.utils.CustomImageViewLargeHeight
+                android:id="@+id/memeSwipeShare_im"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/settingbtpadding"
+                android:padding="@dimen/back_to_first_btn_margin"
+                android:src="@drawable/sharememe" />
+        </RelativeLayout>
+    </RelativeLayout> -->
+
+</RelativeLayout>

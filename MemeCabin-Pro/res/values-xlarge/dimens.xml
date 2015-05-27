@@ -1,0 +1,79 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">5dp</dimen>
+
+    <integer name="num_cols">1</integer>
+
+    <dimen name="home_title_text_size">32sp</dimen>
+    <dimen name="tumb_screen_mark_all_text_size">32sp</dimen>
+    <dimen name="bottom_bar_height">72dp</dimen>
+    <dimen name="preference_option_text_size">30sp</dimen>
+    <dimen name="preference_option_margin_top_bottom">15dp</dimen>
+    <dimen name="favorite_title_text_size">32sp</dimen>
+    <dimen name="title_text_size">32sp</dimen>
+    <dimen name="trending_text_size">45sp</dimen>
+    <dimen name="trending_text_padding_top_bottom">20dp</dimen>
+    <dimen name="trending_thumb_image_size">160dp</dimen>
+    <dimen name="trending_list_text_size">24sp</dimen>
+    <dimen name="badger_text_margin">6dp</dimen>
+    <dimen name="bottom_bar_height2">100dp</dimen>
+    <dimen name="badger_text_size">24sp</dimen>
+    <dimen name="home_menu_text_size">18sp</dimen>
+    <dimen name="home_coming_soon_padding">10dp</dimen>
+    <dimen name="home_coming_soon_text_size">28sp</dimen>
+    <dimen name="marallpopupheader">36sp</dimen>
+    <dimen name="markallpopupsubheader">28sp</dimen>
+    <dimen name="popupmenue">38sp</dimen>
+    <dimen name="back_to_first_btn_padding">10dp</dimen>
+    <dimen name="back_to_first_btn_margin">10dp</dimen>
+    <dimen name="trending_row_padding">10dp</dimen>
+    <dimen name="trending_serial_num_text_size">35sp</dimen>
+    <dimen name="top_bar_height">100dp</dimen>
+    <dimen name="loginregistration_texsize">40sp</dimen>
+    <dimen name="loginregistration_alerttexsize">20sp</dimen>
+    <dimen name="margingforgetview">70dp</dimen>
+    <dimen name="skip_paddingview">60dp</dimen>
+    <dimen name="trending_swipe_title_text_size">25sp</dimen>
+    <dimen name="swipe_screen_top_right_padding">15sp</dimen>
+    <dimen name="dialogleftheader">32sp</dimen>
+    <dimen name="dialogleftsubheaer">20sp</dimen>
+    <dimen name="racypoupdialog17">60sp</dimen>
+    <dimen name="racypoupdialoasub">28sp</dimen>
+    <dimen name="leftmargindialog">90dp</dimen>
+    <dimen name="trending_swipe_sn_text_size">24sp</dimen>
+    <dimen name="readallmarkmargin">30dp</dimen>
+    <dimen name="denmessage_head">28sp</dimen>
+    <dimen name="denmessage_tex">24sp</dimen>
+    <dimen name="marginlrpopupracy">54dp</dimen>
+    <dimen name="marginracypopuptop">60dp</dimen>
+    <dimen name="yoursavefavorites_tex">35sp</dimen>
+    <dimen name="settingbtpadding">14dp</dimen>
+    <dimen name="notificationtext">20sp</dimen>
+    <dimen name="sharemargin">8dp</dimen>
+    <dimen name="preferencetexhead">44sp</dimen>
+    <dimen name="preheadhide">70dp</dimen>
+    <dimen name="forgetpaddinletright">40dp</dimen>
+    <dimen name="hintstextsize">24sp</dimen>
+    <dimen name="title_bg">18sp</dimen>
+    <dimen name="icon_size">80dp</dimen>
+    <dimen name="report_edit">160dp</dimen>
+    <dimen name="submit_btn">32sp</dimen>
+    <dimen name="button_width">200dp</dimen>
+     <dimen name="pouppadingmemetb">30dp</dimen>
+    <dimen name="pouppadingmemelr">40dp</dimen>
+    <dimen name="puptextsize15">28dp</dimen>
+    <dimen name="dpmarging10">20dp</dimen>
+    
+    <dimen name="bookmarkmargin">135dp</dimen>
+    <dimen name="bookmarktext1">14sp</dimen>
+    <dimen name="bookmarktext2">13sp</dimen>
+    <dimen name="bookmarkmarging1">14dp</dimen>
+    <dimen name="bookmarkmarging2">25dp</dimen>
+    
+
+</resources>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:id="@+id/fullscreenslide"
+    tools:context="com.memecabin.pro.MainActivity$PlaceholderFragment" >
+
+    <RelativeLayout
+        android:id="@+id/topbar_rl"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff" >
+
+     
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/appRate_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topbar_rl"
+        android:background="#CCCCCC"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|right"
+            android:layout_marginRight="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/gray"
+            android:text="@string/rateThisapp"
+            android:textSize="@dimen/badger_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/disableAdd_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appRate_rl"
+        android:background="#E6E6E6"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/gray"
+            android:gravity="right|center"
+            android:text="@string/addisable"
+            android:textSize="@dimen/badger_text_size" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/getnewapps"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/disableAdd_rl"
+        android:background="#CCCCCC"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|right"
+            android:layout_marginRight="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/gray"
+            android:text="Meme Cabin on Facebook"
+            android:textSize="@dimen/badger_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/getSdl_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/getnewapps"
+        android:background="#E6E6E6"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|right"
+            android:layout_marginRight="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/gray"
+            android:text="@string/getSdl1"
+            android:textSize="@dimen/badger_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/singleFB_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/getSdl_rl"
+        android:background="#CCCCCC"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|right"
+            android:layout_marginRight="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/gray"
+            android:text="@string/singlefb"
+            android:textSize="@dimen/badger_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/silgeInstagram_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/singleFB_rl"
+        android:background="#E6E6E6"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|right"
+            android:layout_marginRight="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/gray"
+            android:text="@string/singleing"
+            android:textSize="@dimen/badger_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/logoutRelativeLayout"
+        android:onClick="logOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/silgeInstagram_rl"
+        android:background="#CCCCCC"
+        android:gravity="right" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="LOGOUT"
+            android:textSize="@dimen/marallpopupheader" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/dialogRelativelayout" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/disableAdd_rl"
+        android:visibility="gone">
+        <include 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/dilog"/>
+    </RelativeLayout>
+        <RelativeLayout
+        android:id="@+id/singledadRelativelayout" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/getSdl_rl"
+        android:visibility="gone">
+        <include 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/singledaddilog"/>
+    </RelativeLayout>
+        <RelativeLayout
+        android:id="@+id/rateappRelativelayout" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/appRate_rl"
+        android:visibility="gone">
+        <include 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/rateappdilog"/>
+    </RelativeLayout>
+
+</RelativeLayout>

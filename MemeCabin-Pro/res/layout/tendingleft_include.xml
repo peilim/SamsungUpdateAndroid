@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical|center_horizontal"
+    tools:context="com.memecabin.pro.MainActivity$PlaceholderFragment" >
+
+ <RelativeLayout
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:gravity="center" >
+
+        <LinearLayout
+            android:id="@+id/messgeShow_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/markall"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/youSure"
+                android:textColor="@color/bagoni"
+                android:textSize="@dimen/dialogleftheader"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/weJust"
+                android:paddingBottom="@dimen/home_coming_soon_padding"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/dialogleftsubheaer" />
+        </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/trenfirstVp_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/markall_2"
+                android:layout_below="@+id/messgeShow_ll"
+                android:layout_alignLeft="@+id/messgeShow_ll"
+                android:layout_alignRight="@+id/messgeShow_ll"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="5dp"
+                    android:text="@string/yepTake"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dialogleftheader"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/trenmessageNotShow_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/markall_2"
+                android:layout_below="@+id/trenfirstVp_ll"
+                android:layout_alignLeft="@+id/trenfirstVp_ll"
+                android:layout_alignRight="@+id/trenfirstVp_ll"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="5dp"
+                    android:text="@string/yepDoagain"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dialogleftheader"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/trenumCancle_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/markall_2"
+                android:layout_below="@+id/trenmessageNotShow_ll"
+                android:layout_alignLeft="@+id/trenmessageNotShow_ll"
+                android:layout_alignRight="@+id/trenmessageNotShow_ll"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="5dp"
+                    android:text="@string/umCancel"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dialogleftheader"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        
+        </RelativeLayout>
+
+</RelativeLayout>

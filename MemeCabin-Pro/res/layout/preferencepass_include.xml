@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.memecabin.pro.MainActivity$PlaceholderFragment" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+   
+
+            <LinearLayout
+                android:id="@+id/changeprepassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/popup"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/changeyourPass"
+                    android:textColor="@color/shareColor"
+                    android:textSize="@dimen/loginregistration_texsize"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/lookup"
+                    android:textSize="@dimen/denmessage_head"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                  
+                    android:background="@drawable/changepassword"
+                    android:orientation="vertical" >
+
+                    <EditText
+                        android:id="@+id/oldpassword_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/editbg"
+                        android:hint="@string/oldpass"
+                        android:textSize="@dimen/dialogleftheader"
+                        android:inputType="textPassword"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+
+                    <EditText
+                        android:id="@+id/newpassword_et"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/editbg"
+                        android:hint="@string/newPass"
+                        android:textSize="@dimen/dialogleftheader"
+                        android:inputType="textPassword"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+
+                    <EditText
+                        android:id="@+id/repassword_tv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/editbg"
+                        android:hint="@string/repetPass"
+                        android:inputType="textPassword"
+                        android:paddingLeft="10dp"
+                        android:textSize="@dimen/dialogleftheader"
+                        android:singleLine="true" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/forgotpass_ll"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginRight="1dp"
+                                android:background="@drawable/forgotcurrenpass" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/savepassword_ll"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@drawable/changpassword" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

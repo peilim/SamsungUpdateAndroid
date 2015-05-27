@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.memecabin.pro.MainActivity$PlaceholderFragment" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/messgemotiShow_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="@string/saveOrshare"
+            android:textColor="@color/white"
+            android:textSize="@dimen/loginregistration_texsize"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_bar_height2"
+            android:layout_below="@+id/messgemotiShow_tv"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <com.aacom.memecabin.utils.CustomImageViewLargeHeight
+                android:id="@+id/tendingsaveimage_im"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/sharemargin"
+                android:layout_weight="1"
+                android:src="@drawable/saveimage" />
+
+            <com.aacom.memecabin.utils.CustomImageViewLargeHeight
+                android:id="@+id/tendingsharefb_im"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/sharemargin"
+                android:layout_weight="1"
+                android:src="@drawable/facebook" />
+
+            <com.aacom.memecabin.utils.CustomImageViewLargeHeight
+                android:id="@+id/tendingsharetwitter_im"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/sharemargin"
+                android:layout_weight="1"
+                android:src="@drawable/twitter" />
+
+            <com.aacom.memecabin.utils.CustomImageViewLargeHeight
+                android:id="@+id/tendingsendemail_im"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/sharemargin"
+                android:layout_weight="1"
+                android:src="@drawable/mail" />
+
+            <com.aacom.memecabin.utils.CustomImageViewLargeHeight
+                android:id="@+id/tendingsendMMs_im"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/whatsup" />
+
+            <com.aacom.memecabin.utils.CustomImageViewLargeHeight
+                android:id="@+id/tradingReportImage"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:src="@drawable/report" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
